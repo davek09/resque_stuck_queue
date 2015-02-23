@@ -80,7 +80,7 @@ module Resque
 
         reset_keys
 
-        Redis::Classy.db = redis if Redis::Classy.db.nil?
+        RedisClassy.redis = redis if RedisClassy.redis.nil?
 
         pretty_process_name
 
